@@ -1,0 +1,190 @@
+%-------------------------
+% Resume in Latex
+% Author : Matthew Sheehan
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+%\usepackage{fontspec}						% only for XeLaTeX
+%
+%% default tex font is Computer Modern Roman, no pkg needed
+%\setmainfont{Helvetica}
+%\defaultfontfeatures{Ligatures=TeX}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://mattsheehan.me/}{\Large Matthew Sheehan}} & Email : \href{mailto:dev@mattsheehan.me}{dev@mattsheehan.me}\\
+  \href{http://mattsheehan.me/}{http://mattsheehan.me} & Mobile : 330-614-1599 \\
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {LED/Apteryx, Inc}{Akron, OH}
+      {Senior Software Engineer}{Jan 2017 - Present}
+      \resumeItemListStart
+        \resumeItem{Automated Billing System}
+          {Project lead for implementing the internal systems and architecture for the company-wide customer billing system and portal. Included features to automate monthly billing invoices and integrated with the company Active Directory Domain authentication. Leveraged Azure Functions to update each customer's bill, determined by storage usage and software licenses issued.}
+        \resumeItem{Database Management Dashboard}
+          {Core service to setup and deploy  databases and app containers for cloud software on Azure. Used to manage over five-hundred corporate customer databases and track usage.}
+        \resumeItem{Onboarding}
+          {Designed the customer platform for integrating web services, enabling a self-service model and allowing customers to sign up for a product without an account representative.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Lock3 Software, LLC}{Akron, OH}
+      {Software Engineer}{Jan 2018 - Jun 2018}
+      \resumeItemListStart
+        \resumeItem{Research and Programming Language Design}
+          {Researched working draft Technical Specifications for C++ modules, contracts, allocators, concepts, and their implementations in modern C++ compilers, to determine their business utility and criteria for large C++ projects.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Apteryx, Inc}{Akron, OH}
+      {Software Engineer}{May 2013 - Jan 2017}
+      \resumeItemListStart
+        \resumeItem{OEM Software Customization}
+          {Created the framework that allowed the company to OEM (Original Equipment Manufacture) their cloud imaging software to other software resellers, including the ability to include or exclude specific feature sets.}
+        \resumeItem{Image Processing}
+          {Researched and implemented custom image enhancements on digital x-rays for dentistry.}
+        \resumeItem{Azure Deployment and Environment}
+          {Created a testing, staging, and production deployment pipeline. Setup a CDN (Content Delivery Network) to host and deliver shared custom scripts. Responsible for deploying the company SaaS software and maintaining a consistent production environment while keeping a regular update schedule.}
+        \resumeItem{Library Development}
+          {Developed and maintained the core client-side libraries for all the company's web applications. These libraries were consumed by the rest of the development team.}
+        \resumeItem{User Experience}
+          {Led the client-side design and development for the company's flagship cloud imaging software (\footnotesize{XVWeb}). Controlled the entire user experience for all customers.}
+        \resumeItem{Windows App}
+          {Developed Windows 8/8.1 companion app for viewing, manipulating, and enhancing digital x-rays.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Alliance Computer Exchange}{Alliance, OH}
+      {Computer Repair Technician}{Aug 2011 - Dec 2012}
+      \resumeItemListStart
+        \resumeItem{Website Design}
+          {Redesigned the company website.}
+        \resumeItem{Computer Repair}
+          {Performed technical assessments and serviced customer computers.}
+        \resumeItem{Recycling}
+          {Disassembled computers, printers, and other electronics to recycle the individual components.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+    \resumeSubHeadingListStart
+        \resumeSubItem{Technologies}
+          {Programmed in technologies including ASP.NET Core 2, SQL Server, WebGL, and React.}
+        \resumeSubItem{Languages}
+          {Experience in C\#, Typescript, Javascript, C++, SQL, and Java.}
+        \resumeSubItem{Tools}
+          {Efficient with Git, Mercurial, Visual Studio Code, Visual Studio 201X, and Visual Studio Team Services.}
+    \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Jekyll Plugins}
+      {Static site plugin generators for Windows 10 live tiles and Typescript support.}
+    \resumeSubItem{Personal Homepage}
+      {Maintain multiple subdomains at mattsheehan.me hosted on DigitalOcean and secured by LetsEncrypt.}
+    \resumeSubItem{Language Design}
+      {Lisp interpreter, borrowing heavily from Scheme and Common Lisp.}
+  \resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Mount Union}{Alliance, OH}
+      {Bachelor of Science, Pyschology;  GPA: 3.47}{Aug 2009 - May 2013}
+  \resumeSubHeadingListEnd
+
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+%
+
+%-------------------------------------------
+\end{document}
