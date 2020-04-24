@@ -4,4 +4,6 @@
 *.out
 *.aux
 *.synctex.gz
-
+*.xdv
+*.fls
+*.fdb_latexmk
