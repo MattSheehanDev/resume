@@ -13,6 +13,8 @@ I edit in VSCode using the [Text Workshop](https://github.com/James-Yu/LaTeX-Wor
 Cmd + Alt + b
 # Clean
 Cmd + Alt + c
+# View
+Cmd + Alt + v
 ```
 
 ### Preview
