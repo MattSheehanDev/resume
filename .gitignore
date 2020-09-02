@@ -7,3 +7,6 @@
 *.xdv
 *.fls
 *.fdb_latexmk
+
+__*_temp.tex
+~$*.docx
