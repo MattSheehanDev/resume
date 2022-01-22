@@ -64,6 +64,15 @@
     \end{tabular*}\vspace{-5pt}
 }
 
+\newcommand{\resumeSubheadingMultiline}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -82,7 +91,7 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{http://mattsheehan.dev/}{\Large Matthew Sheehan}} & Email : \href{mailto:matt@mattsheehan.dev}{matt@mattsheehan.dev}\\
+  \textbf{\href{http://mattsheehan.dev/}{\Large Matthew Sheehan}} & Email : \href{mailto:matt-sheehan@outlook.com}{matt-sheehan@outlook.com}\\
   \href{https://mattsheehan.dev/}{https://mattsheehan.dev} & Mobile : 330-614-1599 \\
 \end{tabular*}
 
@@ -92,7 +101,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Planet DDS}{Akron, OH}
-      {Software Engineer}{[Acquired] Jan 2021 - Present}
+      {Senior Software Engineer}{[Acquired] Jan 2021 - Present}
       \resumeItemListStart
         \resumeItem{DICOM Capture}
           {Desktop application for capturing digital radiographs and patient data as DICOM files, transferring and storing data to a cloud PACS server. Integrates with multiple intra-oral device SDKs.}
@@ -111,9 +120,9 @@
         \resumeItem{Systems Status}
           {Service for providing customer support the current operational status of customer software at a glance.}
         \resumeItem{Automated Billing System}
-          {Project lead for implementing the internal systems and architecture for the company-wide customer billing system and portal. Included features to automate monthly billing invoices and integrated with the company Active Directory Domain authentication. Leveraged Azure Functions to update each customer's bill, determined by storage usage and software licenses issued.}
+          {Lead project for implementing the internal systems and architecture for the company-wide customer billing system and portal. Included features to automate monthly billing invoices and integrated with the company Active Directory Domain authentication. Leveraged Azure Functions to update each customer's bill, determined by storage usage and software licenses issued.}
         \resumeItem{Database Management Dashboard}
-          {Core service to setup and deploy app databases and storage containers for cloud software on Azure. Used to manage over one-thousand corporate customer databases and track individual usage.}
+          {Core service to setup and deploy app databases and storage containers for cloud software on Azure. Used to manage over two-thousand corporate customer databases and track individual usage.}
         \resumeItem{Native Bridge Service}
           {Designed and implemented the desktop service to enable the company's legacy desktop software to interoperate with their PACS cloud software, including the development of three browser extensions (Chrome, Firefox, Microsoft Edge).}
       \resumeItemListEnd
@@ -171,20 +180,27 @@
 
 
 %-----------PROJECTS-----------------
-\section{Projects}
+\section{Projects \& Talks}
   \resumeSubHeadingListStart
+    \resumeSubheadingMultiline
+      {CodeMash Speaker}{\textit{\small Jan 2022}}
+      {$\cdot$ Making the most of your DevOps Artifacts}{}
+      {$\cdot$ Consistent cloud environments with Infrastructure as Code}
     \resumeSubItem{Jekyll Plugins}
       {Static site plugin generators for Windows 10 live tiles and Typescript support.}
     \resumeSubItem{Personal Homepage}
       {Maintain multiple subdomains at mattsheehan.dev hosted on DigitalOcean and secured by LetsEncrypt.}
     \resumeSubItem{Language Design}
-      {Lisp interpreter, borrowing heavily from Scheme and Common Lisp.}
+      {Toy lisp interpreter, borrowing heavily from Scheme and Common Lisp, written in CSharp.}
   \resumeSubHeadingListEnd
 
 
 %-----------EDUCATION-----------------
 \section{Education}
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Microsoft Certified: Azure DevOps Engineer Expert}{}
+      {Certification Number: I059-2581}{Dec 2021}
     \resumeSubheading
       {Microsoft Certified: Azure Developer Associate}{}
       {Certification Number: H810-4590}{May 2021}
