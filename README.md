@@ -24,6 +24,7 @@ Cmd + Alt + v
 ### Preview
 ![Resume Screenshot 0](/resume_preview-0.png)
 ![Resume Screenshot 1](/resume_preview-1.png)
+![Resume Screenshot 2](/resume_preview-2.png)
 
 ### License
 Format is MIT but all the data is owned by Matt Sheehan.
